@@ -6,4 +6,136 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/android" />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/name_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:layout_marginStart="@dimen/margin_tiny"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_toEndOf="@+id/name_label"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/nickname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/nickname_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="@dimen/margin_tiny"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toEndOf="@+id/nickname_label"
+        android:text="@string/nickname" />
+
+    <TextView
+        android:id="@+id/country_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickname_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/country_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickname"
+        android:layout_marginStart="@dimen/margin_tiny"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toEndOf="@+id/country_label"
+        android:text="@string/country" />
+
+    <TextView
+        android:id="@+id/stylesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:text="@string/styles_label"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/style_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stylesLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/style_one" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/style_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stylesLabel"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toEndOf="@+id/style_one"
+        android:text="@string/style_two" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/style_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stylesLabel"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toEndOf="@+id/style_two"
+        android:text="@string/style_three" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/style_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stylesLabel"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toEndOf="@+id/style_three"
+        android:text="@string/style_four" />
+
+    <Button
+        android:id="@+id/clickmeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_text" />
+
 </RelativeLayout>
